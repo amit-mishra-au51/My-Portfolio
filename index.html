@@ -248,6 +248,21 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <script  >
+    function showMore(Symbol,  Action) {
+
+    var Reticences_Symbol = document.getElementById(Symbol);
+    var Action_Text = document.getElementById(Action);
+
+    if (Reticences_Symbol.style.display === "none") {
+        Reticences_Symbol.style.display = "block";
+    }
+    else {
+        Reticences_Symbol.style.display = "none";
+        Action_Text.innerHTML = "See more";
+    }
+}
+  </script>
 </body>
 
 </html>
