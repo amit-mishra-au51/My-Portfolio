@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amit - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/8f2866ebab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">Amit's Portfolio</div>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-sharp fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full-stack Web Developer</p>
+        <h1>Hi, I'm <span>Amit Mishra</span></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpeg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hello!! I'm a passionate and enthusiastic web developer. With a
+            strong foundation in coding and a genuine interest in creating
+            engaging and user-friendly websites, I am eager to kickstart my
+            career in the dynamic world of web development. During my academic
+            journey, I gained a solid understanding of web development
+            principles, including HTML, CSS, and JavaScript and created many
+            projects based on MERN.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Design Web/App Interfaces<br>Responsive Design</li>
+              <li><span>Web Development</span><br>HTML/CSS<br>JavaScript</li>
+              <li><span>Front-End Frameworks</span><br>React.js</li>
+              <li><span>Back-End Development</span><br>JavaScript(with Node.js & Express.js)</li>
+              <li><span>Database</span><br>MongoDB</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022 - 2023 </span><br>
+                Complete full-stack web development trainee<br> in AttainU (Bengaluru)</li>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2018</span><br>B.Sc. (Math’s) from C.S.J.M University, Kanpur</li>
+              <li><span>2016</span><br>‘O’ level Computer Diploma from DOEACC (NEILIT), Delhi</li>
+              <li><span>2021</span><br>‘A’ level Computer Diploma from DOEACC (NEILIT), Delhi</li>
+              <li><span>2023</span><br> Full-stack JavaScript certification based on MERN from AttianU (Bengaluru).
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------Services---------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Build websites from scratch using HTML, CSS, and JavaScript, ensuring responsiveness and user-friendly
+            interfaces. Create interactive and visually appealing user interfaces using framework like React and Develop
+            server-side logic using technologies such as Node.js to handle
+            data processing, database integration, and server management.</p>
+         
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>UI refers to the visual design and presentation of a website or application. It involves creating an
+            attractive and intuitive interface that users can interact with easily. while UX focuses on the overall
+            experience and usability of a product. Both UI and UX work together to create an engaging and satisfying
+            user experience and expectations of the users.</p>
+          
+        </div>
+        <div>
+          <i class="fa-solid fa-pen-to-square"></i>
+          <h2>Others</h2>
+          <p>Providing some extra services like Content management system (CMS) and E-commerce solution like product
+            catalog management, payment gateway etc. And website optimization means search engine optimization (SEO) to
+            enhance user experience and increase organic traffic. Responsive design and website migration, website
+            architectures, QA testing.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- ------portfolio----- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/rain.png" alt="">
+          <div class="layer">
+            <h3>Weather App</h3>
+            <p>
+              Introducing our innovative weather web app, the ultimate tool to keep you informed about the current and
+              future weather conditions. With our user-friendly interface and accurate data, you'll never be caught off
+              guard by unexpected weather changes again.
+            </p>
+            <a href="https://weather-app-sable-eight.vercel.app/"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/chat.png" alt="">
+          <div class="layer">
+            <h3>Chat App</h3>
+            <p>
+              Chat web apps are widely used for personal communication, professional collaboration, customer support,
+              and various other purposes. They enable people to connect and interact in real time, overcoming
+              geographical barriers and facilitating efficient communication.
+            </p>
+            <a href="https://chatapplication-production-c5fc.up.railway.app/"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/file-share.webp" alt="">
+          <div class="layer">
+            <h3>File-Share App</h3>
+            <p>
+              A file sharing app is a software application that allows users to upload, store, and share files with
+              others over the internet. It provides a convenient way to exchange documents, images, videos, and other
+              types of files securely and making collaboration, efficient and accessible.
+            </p>
+            <a href="https://file-share-app-iota.vercel.app/"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+<div style="display: none;" id="show-more-text" >
+  <div class="work-list"  >
+    <div class="work">
+      <img src="images/rain.png" alt="">
+      <div class="layer">
+        <h3>Weather App</h3>
+        <p>
+          Introducing our innovative weather web app, the ultimate tool to keep you informed about the current and
+          future weather conditions. With our user-friendly interface and accurate data, you'll never be caught off
+          guard by unexpected weather changes again.
+        </p>
+        <a href="https://weather-app-sable-eight.vercel.app/"><i class="fa-solid fa-link"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="images/chat.png" alt="">
+      <div class="layer">
+        <h3>Chat App</h3>
+        <p>
+          Chat web apps are widely used for personal communication, professional collaboration, customer support,
+          and various other purposes. They enable people to connect and interact in real time, overcoming
+          geographical barriers and facilitating efficient communication.
+        </p>
+        <a href="https://chatapplication-production-c5fc.up.railway.app/"><i class="fa-solid fa-link"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="images/file-share.webp" alt="">
+      <div class="layer">
+        <h3>File-Share App</h3>
+        <p>
+          A file sharing app is a software application that allows users to upload, store, and share files with
+          others over the internet. It provides a convenient way to exchange documents, images, videos, and other
+          types of files securely and making collaboration, efficient and accessible.
+        </p>
+        <a href="https://file-share-app-iota.vercel.app/"><i class="fa-solid fa-link"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <button class="btn" onclick="showMore('show-more-text','Action')" id="Action">
+        Read more
+    </button>
+      <a href="https://github.com/amit-mishra-au51?tab=repositories" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- --------Contact-------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>amitmishrastp98@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>+916392838686</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100008007737497&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/amitt_mishraaa?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/amit-mishra-9375a4267"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/message/2ZMECTCZQUF2B1"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/amit-mishra-au51"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="images/amit.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="E-mail" placeholder="Your E-mail" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Thanks !! for visiting... <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0"
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px"
+    }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwKZnYP2OkTisSXRuae7melS9YShsuwy0UXaOHsru9IZOCRirlFd0PxmHD3yMA4qVMHQA/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully !!"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script  >
+    function showMore(Symbol,  Action) {
+
+    var Reticences_Symbol = document.getElementById(Symbol);
+    var Action_Text = document.getElementById(Action);
+
+    if (Reticences_Symbol.style.display === "none") {
+        Reticences_Symbol.style.display = "block";
+        Action_Text.innerHTML = "Read less";
+    }
+    else {
+        Reticences_Symbol.style.display = "none";
+        Action_Text.innerHTML = "Read more";
+    }
+}
+  </script>
+</body>
+
+</html>
