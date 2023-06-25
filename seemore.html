@@ -297,7 +297,22 @@
     })
   </script>
 
-  <script src="./index.js" ></script>
+  <script  >
+    function showMore(Symbol,  Action) {
+
+    var Reticences_Symbol = document.getElementById(Symbol);
+    var Action_Text = document.getElementById(Action);
+
+    if (Reticences_Symbol.style.display === "none") {
+        Reticences_Symbol.style.display = "block";
+        Action_Text.innerHTML = "Read less";
+    }
+    else {
+        Reticences_Symbol.style.display = "none";
+        Action_Text.innerHTML = "Read more";
+    }
+}
+  </script>
 </body>
 
 </html>
