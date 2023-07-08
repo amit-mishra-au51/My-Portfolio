@@ -96,7 +96,7 @@
             interfaces. Create interactive and visually appealing user interfaces using framework like React and Develop
             server-side logic using technologies such as Node.js to handle
             data processing, database integration, and server management.</p>
-         
+
         </div>
         <div>
           <i class="fa-solid fa-crop"></i>
@@ -105,7 +105,7 @@
             attractive and intuitive interface that users can interact with easily. while UX focuses on the overall
             experience and usability of a product. Both UI and UX work together to create an engaging and satisfying
             user experience and expectations of the users.</p>
-          
+
         </div>
         <div>
           <i class="fa-solid fa-pen-to-square"></i>
@@ -115,7 +115,7 @@
             enhance user experience and increase organic traffic. Responsive design and website migration, website
             architectures, QA testing.
           </p>
-          
+
         </div>
       </div>
     </div>
@@ -163,8 +163,44 @@
             <a href="https://file-share-rho.vercel.app/"><i class="fa-solid fa-link"></i></a>
           </div>
         </div>
+        <div class="work">
+          <img src="images/sci-fi .png" alt="">
+          <div class="layer">
+            <h3>Sci-fi Calc</h3>
+            <p>
+              The sci-fi calculator web application is a futuristic and advanced calculator tool designed to perform
+              various mathematical calculations with a touch of science fiction flair. It provides an intuitive user
+              interface and offers a range of innovative features and functions beyond basic arithmetic operations.
+            </p>
+            <a href="https://sci-fi-calculator.vercel.app/"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/tic-tac-toe.png" alt="">
+          <div class="layer">
+            <h3>Tic-Tac-Toe</h3>
+            <p>
+              Tic-tac-toe is a classic game played on a grid of 3x3 squares. The objective of the game is to get three
+              of your own symbols (usually X or O) in a row, either horizontally, vertically, or diagonally, before your
+              opponent does. The game is typically played by two players.
+            </p>
+            <a href="https://tic-tac-toe-beryl-pi.vercel.app/"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/edit.png" alt="">
+          <div class="layer">
+            <h3>Textutils App</h3>
+            <p>
+              The TextUtils app is a versatile tool designed to assist users in various text-related tasks. It leverages
+              natural language processing techniques to provide features such as text summarization and more.ts
+              functionality helps users save time and effort, enabling them to focus on other aspects of their work.
+            </p>
+            <a href="https://my-textutils-app.vercel.app/"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
       </div>
-      <a href="https://github.com/amit-mishra-au51?tab=repositories" class="btn">See More</a>
+      <a class="btn">See More</a>
     </div>
   </div>
 
@@ -178,8 +214,10 @@
           <p><i class="fa-solid fa-envelope"></i>amitmishrastp98@gmail.com</p>
           <p><i class="fa-solid fa-phone"></i>+916392838686</p>
           <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100008007737497&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://instagram.com/amitt_mishraaa?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008007737497&mibextid=ZbWKwL"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/amitt_mishraaa?igshid=MzNlNGNkZWQ4Mg=="><i
+                class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/amit-mishra-9375a4267"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://wa.me/message/2ZMECTCZQUF2B1"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://github.com/amit-mishra-au51"><i class="fa-brands fa-github"></i></a>
@@ -234,34 +272,19 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwKZnYP2OkTisSXRuae7melS9YShsuwy0UXaOHsru9IZOCRirlFd0PxmHD3yMA4qVMHQA/exec'
     const form = document.forms['submit-to-google-sheet'];
     const msg = document.getElementById("msg")
-  
+
     form.addEventListener('submit', e => {
       e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
           msg.innerHTML = "Message sent successfully !!"
-          setTimeout(function(){
+          setTimeout(function () {
             msg.innerHTML = ""
           }, 5000)
           form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
-  <script  >
-    function showMore(Symbol,  Action) {
-
-    var Reticences_Symbol = document.getElementById(Symbol);
-    var Action_Text = document.getElementById(Action);
-
-    if (Reticences_Symbol.style.display === "none") {
-        Reticences_Symbol.style.display = "block";
-    }
-    else {
-        Reticences_Symbol.style.display = "none";
-        Action_Text.innerHTML = "See more";
-    }
-}
   </script>
 </body>
 
